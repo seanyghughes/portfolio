@@ -2,22 +2,17 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .ProfilePic {
   border-radius: 50%;
   height: 20%;
   width: 20%;
   box-shadow: 10px 10px 100px black;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ProfilePic {
+    animation: App-logo-spin infinite 0s linear;
+  }
 }
 
 .App-header {
