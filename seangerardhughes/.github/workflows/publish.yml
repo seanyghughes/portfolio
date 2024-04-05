@@ -1,5 +1,5 @@
 name: Generate a build and push to another branch
-
+        
 on:
   push:
     branches:
@@ -10,6 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Push
     steps:
+
+      - name: Deploy to Hostinger
+# You may pin to the exact commit or the version.
+# uses: annshiv/Hostinger-deployment@b28328ef39e6c67f631be787b4533dd37124a32f
+        uses: annshiv/Hostinger-deployment@v2.1
+
       - name: git-checkout
         uses: actions/checkout@v3
 
