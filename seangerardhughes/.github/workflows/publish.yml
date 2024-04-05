@@ -14,7 +14,7 @@ jobs:
       - name: git-checkout
         uses: actions/checkout@v3
         with:
-          path: 'portfolio/seangerardhughes'
+          path: portfolio/seangerardhughes
 
       - name: Install all dependencies
         run: npm install
