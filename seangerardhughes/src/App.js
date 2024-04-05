@@ -8,7 +8,7 @@ function App() {
         <h2>Site Currently Under Redevelopment</h2>
         <img src={ProfilePic} className="ProfilePic" alt="ProfilePic" />
         <p>
-          Sean Gerard Hughes | Data Analytics 
+          Sean Gerard Hughes | Analytics 
         </p>
        
       </header>
