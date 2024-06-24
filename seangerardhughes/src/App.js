@@ -1,31 +1,39 @@
+// App.js
+
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ProfilePic from './ProfilePic.jpg';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
+import ProfilePic from './ProfilePic.jpg';
 import Navbar from './components/Navbar';
-import About from './pages/About'; // Import your About component
-import Resume from './pages/Resume'; // Import your Resume component
 
-
-function App() {
+export default function App() {
   return (
     <Router>
       <div className="App">
         <Navbar />
-        <header className="App-header">
-          <img src={ProfilePic} className="ProfilePic" alt="ProfilePic" />
-          <p>
-            Sean Gerard Hughes | Data Analytics 
-          </p>
-        </header>
-        <Routes>
-          <Route path="/about" component={About} />
-          <Route path="/resume" component={Resume} />
-          {/* Add more routes for other pages */}
-        </Routes>
+        <div id="home" className="Home">
+          <header className="App-header">
+            <title>Home Page</title>
+            <img src={ProfilePic} className="ProfilePic" alt="ProfilePic" />
+            <p>Sean Gerard Hughes | Data Analytics</p>
+          </header>
+        </div>
+        <div id="about" className="About">
+          <header className="App-about">
+            <p>About Me</p>
+          </header>
+        </div>
+        <div id="projects" className="Projects">
+          <header className="App-projects">
+            <p>Projects</p>
+          </header>
+        </div>
+        <div id="contact" className="Contact">
+          <header className="App-contact">
+            <p>Contact</p>
+          </header>
+        </div>
       </div>
     </Router>
   );
 }
-
-export default App;

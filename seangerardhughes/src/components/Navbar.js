@@ -1,8 +1,8 @@
 // Navbar.js
 
 import React from 'react';
-import { Link } from 'react-router-dom'; // Assuming you're using React Router for navigation
-import './Navbar.css'; // Assuming you have a CSS file for Navbar styles
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 function Navbar() {
   return (
@@ -13,21 +13,25 @@ function Navbar() {
         </Link>
         <ul className="navbar-menu">
           <li className="navbar-item">
-            <Link to="/" className="navbar-link">
+            <a href="#home" className="navbar-link">
               Home
-            </Link>
+            </a>
           </li>
           <li className="navbar-item">
-            <Link to="/about" className="navbar-link">
+            <a href="#about" className="navbar-link">
               About
-            </Link>
+            </a>
           </li>
           <li className="navbar-item">
-            <Link to="/resume" className="navbar-link">
-              Resume
-            </Link>
+            <a href="#projects" className="navbar-link">
+              Projects
+            </a>
           </li>
-          {/* Add more navbar items as needed */}
+          <li className="navbar-item">
+            <a href="#contact" className="navbar-link">
+              Contact
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
