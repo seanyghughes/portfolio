@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import ProfilePic from './ProfilePic.jpg';
 import Navbar from './components/Navbar';
+import BottomNavbar from './components/BottomNavbar';
 
 export default function App() {
   return (
@@ -20,7 +21,17 @@ export default function App() {
         </div>
         <div id="about" className="About">
           <header className="App-about">
-            <p>About Me</p>
+            <h1>About</h1>
+            <p>
+              Sean Hughes is a Technical Data Analyst with 5+ years experience working with Data
+            </p>
+            <div id="skills-section">
+              <ul>
+                <li>7+ Years SQL</li>
+                <li>7+ Years Python</li>
+                <li>4+ Years Data Modelling</li>
+              </ul>
+            </div>
           </header>
         </div>
         <div id="projects" className="Projects">
@@ -32,6 +43,7 @@ export default function App() {
           <header className="App-contact">
             <p>Contact</p>
           </header>
+          <div><BottomNavbar /></div>
         </div>
       </div>
     </Router>

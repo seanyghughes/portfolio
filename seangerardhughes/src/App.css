@@ -25,7 +25,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -66,25 +66,12 @@
   box-shadow: 10px 10px 100px 10px black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .ProfilePic {
-    animation: App-logo-spin infinite 0s linear;
-  }
-}
-
 body {
-  background-color: #282c34;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: rgb(31, 32, 36);
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-align: start;
 }
+
