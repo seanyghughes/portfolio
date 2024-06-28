@@ -27,17 +27,17 @@ function Navbar() {
             </a>
           </li>
           <li className="navbar-item">
-            <a href="#about" className="navbar-link" onClick={toggleMenu}>
+            <a href="#about" className="navbar-link" onClick={closeMenu}>
               About
             </a>
           </li>
           <li className="navbar-item">
-            <a href="#projects" className="navbar-link" onClick={toggleMenu}>
+            <a href="#projects" className="navbar-link" onClick={closeMenu}>
               Projects
             </a>
           </li>
           <li className="navbar-item">
-            <a href="#contact" className="navbar-link" onClick={toggleMenu}>
+            <a href="#contact" className="navbar-link" onClick={closeMenu}>
               Contact
             </a>
           </li>

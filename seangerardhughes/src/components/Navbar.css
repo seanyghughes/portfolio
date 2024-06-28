@@ -55,12 +55,12 @@
   width: 25px;
   height: 3px;
   background-color: #333;
-  margin: 4px;
+  margin: 3px;
   transition: all 0.3s ease;
 }
 
 .burger.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 5px);
+  transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 .burger.toggle .line2 {
@@ -68,7 +68,7 @@
 }
 
 .burger.toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -5px);
+  transform: rotate(45deg) translate(-6px, -7px);
 }
 
 /* Media queries for responsive navbar */
