@@ -16,7 +16,7 @@ export default function App() {
           <header className="App-header">
             <title>Home Page</title>
             <img src={ProfilePic} className="ProfilePic" alt="ProfilePic" />
-            <p>Sean Gerard Hughes | Data Analytics</p>
+            <p>Sean Hughes | Data Analytics</p>
           </header>
         </div>
         <div id="about" className="About">

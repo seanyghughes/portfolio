@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import './Navbar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,9 +19,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <a href="#home" className="navbar-logo" onClick={closeMenu}>
-          Sean Hughes
-        </a>
+        <a href="#home" className="navbar-logo" onClick={closeMenu}> <FontAwesomeIcon icon={faHouse} size='3x'/></a>
         <div className={`navbar-menu ${isOpen ? 'open' : ''}`}>
           <li className="navbar-item">
             <a href="#home" className="navbar-link" onClick={closeMenu}>
