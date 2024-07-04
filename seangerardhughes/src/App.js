@@ -23,7 +23,7 @@ export default function App() {
           <header className="App-about">
             <h1>About</h1>
             <p>
-              Sean Hughes is a Technical Data Analyst with 5+ years experience working with Data
+              Sean Hughes is a Technical Data Analyst with 5+ years experience working with Data from high-growth startups to global media and marketing companies.
             </p>
             <div id="skills-section">
               <ul>

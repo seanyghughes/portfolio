@@ -24,6 +24,15 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin: 50px;
+}
+
+.App-about li {
+  text-align: left;
+}
+
+.App-about p {
+  text-align:justify;
 }
 
 .Projects {
