@@ -1,11 +1,13 @@
-// App.js
-
 import React from 'react';
-import { BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import ProfilePic from './ProfilePic.jpg';
 import Navbar from './components/Navbar';
 import BottomNavbar from './components/BottomNavbar';
+import ProjectGallery from './components/ProjectGallery';
+import Project1 from './pages/Project1';
+import Project2 from './pages/Project2';
+import ContactForm from './components/ContactForm'; // Import the ContactForm
 
 export default function App() {
   return (
@@ -36,16 +38,24 @@ export default function App() {
         </div>
         <div id="projects" className="Projects">
           <header className="App-projects">
-            <p>Projects</p>
+            <h1>Projects</h1>
+            <ProjectGallery />
           </header>
         </div>
         <div id="contact" className="Contact">
           <header className="App-contact">
-            <p>Contact</p>
+            <h1>Contact</h1>
+            <ContactForm /> {/* Include the ContactForm component */}
           </header>
           <div><BottomNavbar /></div>
         </div>
       </div>
+
+      <Routes>
+        <Route path="/project1" element={<Project1 />} />
+        <Route path="/project2" element={<Project2 />} />
+        {/* Add routes for other projects */}
+      </Routes>
     </Router>
   );
 }
