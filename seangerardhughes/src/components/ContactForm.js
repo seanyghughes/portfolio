@@ -20,7 +20,7 @@ export default function ContactForm() {
         <div className="map-container">
           <iframe
             title="Google Maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10028.783476794897!2d-0.1130156!3d51.4630719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760561e501d3c3%3A0x21b6f5d4d89e43ea!2sBrixton%2C%20London!5e0!3m2!1sen!2suk!4v1691625294896!5m2!1sen!2suk" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.433267824332!2d2.179328715663905!3d41.384093979263774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f4e60f2a59%3A0xbfc0d2a74dc5fd5d!2sEl%20Born%2C%20Barcelona!5e0!3m2!1sen!2ses!4v1695064896945!5m2!1sen!2ses"
             width="200%"
             height="400"
             style={{ border: 0 }}
@@ -31,9 +31,9 @@ export default function ContactForm() {
       </div>
 
       <div className="contact-details">
-        <p>Email: seanyghughes@gmail.com </p>
-        <p>Phone: +44 7786 102005</p>
-        <p>Address: London, United Kingdom</p>
+        <p>seanyghughes@gmail.com </p>
+        <p>+34 617 153 058</p>
+        <p>Barcelona, España</p>
       </div>
     </div>
   );

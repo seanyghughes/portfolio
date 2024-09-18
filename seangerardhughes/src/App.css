@@ -20,33 +20,39 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* Centers horizontally */
+  justify-content: center; /* Centers vertically */
   font-size: calc(10px + 2vmin);
   color: white;
-  margin: 50px;
+  margin: 0 auto; /* Centers content horizontally */
+  text-align: center;
+  max-width: 800px; /* Optional: Limits width for better readability */
+}
+
+.App-about p {
+  text-align: justify;
+  margin: 20px;
 }
 
 .App-about li {
   text-align: left;
 }
 
-.App-about p {
-  text-align:justify;
-}
-
 .Projects {
   text-align: center;
 }
 
-.App-projects {
-  min-height: 100vh;
+.App-contact {
+  min-height: 100vh; /* Ensure it takes the full viewport height */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* Centers horizontally */
+  justify-content: center; /* Centers vertically */
   font-size: calc(10px + 2vmin);
   color: white;
+  margin: 0 auto; /* Centers content horizontally */
+  text-align: center;
+  max-width: 800px; /* Optional: Limit width for better readability */
 }
 
 .Contact {
@@ -81,16 +87,18 @@ html {
 }
 
 .contact-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Ensures form and map stack vertically in small screens */
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  gap: 2rem; /* Optional: Space between the contact form and the map */
 }
 
 .contact-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 20px; /* Space between the form and map */
+  gap: 10rem; /* Space between the form and map */
 }
 
 .contact-form {
