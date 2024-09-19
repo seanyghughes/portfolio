@@ -14,41 +14,49 @@ export default function App() {
     <Router>
       <div className="App">
         <Navbar />
-        <div id="home" className="Home">
-          <header className="App-header">
-            <title>Home Page</title>
-            <img src={ProfilePic} className="ProfilePic" alt="ProfilePic" />
-            <p>Sean Hughes | Data Analytics</p>
-          </header>
-        </div>
-        <div id="about" className="About">
-          <header className="App-about">
-            <h1>About</h1>
-            <p>
-              Sean Hughes is a Technical Data Analyst with 5+ years experience working with Data from high-growth startups to global media and marketing companies.
-            </p>
-            <div id="skills-section">
-              <ul>
-                <li>7+ Years SQL</li>
-                <li>7+ Years Python</li>
-                <li>4+ Years Data Modelling</li>
-              </ul>
+        <section>
+          <div id="home" className="Home">
+            <header className="App-header">
+              <title>Home Page</title>
+              <img src={ProfilePic} className="ProfilePic" alt="ProfilePic" />
+              <p>Sean Hughes | Data Analytics</p>
+            </header>
+          </div>
+          </section>
+        <section>
+          <div id="about" className="About">
+            <header className="App-about">
+              <h1>About</h1>
+              <p>
+                Sean Hughes is a Technical Data Analyst with 5+ years experience working with Data from high-growth startups to global media and marketing companies.
+              </p>
+              <div id="skills-section">
+                <ul>
+                  <li>7+ Years SQL</li>
+                  <li>7+ Years Python</li>
+                  <li>4+ Years Data Modelling</li>
+                </ul>
+              </div>
+            </header>
+          </div>
+          </section>
+        <section>
+          <div id="projects" className="Projects">
+            <header className="App-projects">
+              <h1>Projects</h1>
+              <ProjectGallery />
+            </header>
+          </div>
+        </section>
+          <section>
+            <div id="contact" className="Contact">
+              <header className="App-contact">
+                <h1>Contact</h1>
+                <ContactForm /> {/* Include the ContactForm component */}
+              </header>
+              <div><BottomNavbar /></div>
             </div>
-          </header>
-        </div>
-        <div id="projects" className="Projects">
-          <header className="App-projects">
-            <h1>Projects</h1>
-            <ProjectGallery />
-          </header>
-        </div>
-        <div id="contact" className="Contact">
-          <header className="App-contact">
-            <h1>Contact</h1>
-            <ContactForm /> {/* Include the ContactForm component */}
-          </header>
-          <div><BottomNavbar /></div>
-        </div>
+          </section>
       </div>
 
       <Routes>

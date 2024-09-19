@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  scroll-snap-type: y mandatory; /* Enables snap on vertical scrolling */
+  overflow-y: scroll; /* Allows scrolling within the container */
+  height: 100vh; 
 }
 
 .App-header {
@@ -14,6 +17,7 @@
 
 .About {
   text-align: center;
+  scroll-snap-align: center;
 }
 
 .App-about {
@@ -39,7 +43,16 @@
 }
 
 .Projects {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers horizontally */
+  justify-content: center; /* Centers vertically */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin: 0 auto; /* Centers content horizontally */
   text-align: center;
+  max-width: 800px; /* Optional: Limits width for better readability */
 }
 
 .App-contact {
@@ -136,4 +149,8 @@ html {
 
 .contact-details {
   margin-top: 20px;
+}
+
+section {
+  scroll-snap-align: start none;
 }
