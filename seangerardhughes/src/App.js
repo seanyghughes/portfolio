@@ -20,44 +20,11 @@ export default function App() {
               <title>Home Page</title>
               <img src={ProfilePic} className="ProfilePic" alt="ProfilePic" />
               <p>Sean Hughes | Data Analytics</p>
+              <h2>Site Currently Under Redevelopment</h2>
             </header>
           </div>
           </section>
-        <section>
-          <div id="about" className="About">
-            <header className="App-about">
-              <h1>About</h1>
-              <p>
-                Sean Hughes is a Technical Data Analyst with 5+ years experience working with Data from high-growth startups to global media and marketing companies to large scale SaaS companies.
-              </p>
-              <div id="skills-section">
-                <ul>
-                  <li>7+ Years SQL</li>
-                  <li>7+ Years Python</li>
-                  <li>4+ Years Data Modelling</li>
-                </ul>
-              </div>
-            </header>
-          </div>
-          </section>
-        <section>
-          <div id="projects" className="Projects">
-            <header className="App-projects">
-              <h1>Projects</h1>
-              <Project1 />
-              <ProjectGallery />
-            </header>
-          </div>
-        </section>
-          <section>
-            <div id="contact" className="Contact">
-              <header className="App-contact">
-                <h1>Contact</h1>
-                <ContactForm /> {/* Include the ContactForm component */}
-              </header>
-              <div><BottomNavbar /></div>
-            </div>
-          </section>
+          <div><BottomNavbar /></div>
       </div>
 
       <Routes>
