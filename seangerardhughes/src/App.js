@@ -28,7 +28,7 @@ export default function App() {
             <header className="App-about">
               <h1>About</h1>
               <p>
-                Sean Hughes is a Technical Data Analyst with 5+ years experience working with Data from high-growth startups to global media and marketing companies.
+                Sean Hughes is a Technical Data Analyst with 5+ years experience working with Data from high-growth startups to global media and marketing companies to large scale SaaS companies.
               </p>
               <div id="skills-section">
                 <ul>
@@ -44,6 +44,7 @@ export default function App() {
           <div id="projects" className="Projects">
             <header className="App-projects">
               <h1>Projects</h1>
+              <Project1 />
               <ProjectGallery />
             </header>
           </div>
