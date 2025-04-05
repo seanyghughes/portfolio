@@ -1,13 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import ProfilePic from './ProfilePic.jpg';
+import ProfilePic from './ProfilePic2.jpg';
 import Navbar from './components/Navbar';
 import BottomNavbar from './components/BottomNavbar';
-import ProjectGallery from './components/ProjectGallery';
-import Project1 from './pages/Project1';
-import Project2 from './pages/Project2';
-import ContactForm from './components/ContactForm'; // Import the ContactForm
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 export default function App() {
   return (
@@ -28,8 +26,9 @@ export default function App() {
       </div>
 
       <Routes>
-        <Route path="/project1" element={<Project1 />} />
-        <Route path="/project2" element={<Project2 />} />
+        <Route path="/" />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
         {/* Add routes for other projects */}
       </Routes>
     </Router>

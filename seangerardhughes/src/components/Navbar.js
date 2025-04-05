@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,27 +20,27 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <a href="#home" className="navbar-logo" onClick={closeMenu}> <FontAwesomeIcon icon={faHouse} size='3x'/></a>
+        <Link to="/" className="navbar-link" onClick={closeMenu}> <FontAwesomeIcon icon={faHouse} size='2x'/> </Link>
         <div className={`navbar-menu ${isOpen ? 'open' : ''}`}>
           <li className="navbar-item">
-            <a href="#home" className="navbar-link" onClick={closeMenu}>
+          <Link to="/" className="navbar-link" onClick={closeMenu}>
               Home
-            </a>
+            </Link>
           </li>
           <li className="navbar-item">
-            <a href="#about" className="navbar-link" onClick={closeMenu}>
+          <Link to="/about" className="navbar-link" onClick={closeMenu}>
               About
-            </a>
+            </Link>
           </li>
           <li className="navbar-item">
-            <a href="#projects" className="navbar-link" onClick={closeMenu}>
+          <Link to="/projects" className="navbar-link" onClick={closeMenu}>
               Projects
-            </a>
+            </Link>
           </li>
           <li className="navbar-item">
-            <a href="#contact" className="navbar-link" onClick={closeMenu}>
+          <Link to="/Contac" className="navbar-link" onClick={closeMenu}>
               Contact
-            </a>
+            </Link>
           </li>
         </div>
         <div className={`burger ${isOpen ? 'toggle' : ''}`} onClick={toggleMenu}>

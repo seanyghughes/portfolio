@@ -1,6 +1,6 @@
 import React from 'react'
 
-function NFL_Project() {
+function Projects() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function NFL_Project() {
   )
 }
 
-export default NFL_Project
+export default Projects

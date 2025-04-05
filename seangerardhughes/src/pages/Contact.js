@@ -1,6 +1,6 @@
 import React from 'react'
 
-function SpotifyProject() {
+function Contact() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function SpotifyProject() {
   )
 }
 
-export default SpotifyProject
+export default Contact
