@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import ProfilePic from './ProfilePic2.jpg';
+import ProfilePic from './ProfilePic.jpg';
 import Navbar from './components/Navbar';
 import BottomNavbar from './components/BottomNavbar';
 import Projects from './pages/Projects';
