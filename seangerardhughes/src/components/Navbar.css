@@ -24,7 +24,7 @@
 }
 
 .navbar-logo:hover {
-  color: #21ae55;
+  color: #007bff;
 }
 
 .navbar-logo img {
@@ -49,7 +49,7 @@
 }
 
 .navbar-link:hover {
-  color: #21ae55;
+  color:#007bff;
 }
 
 /* Burger menu styles */
