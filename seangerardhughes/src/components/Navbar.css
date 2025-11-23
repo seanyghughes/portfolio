@@ -52,6 +52,24 @@
   color:#007bff;
 }
 
+/* Home and About button styles */
+.home-link,
+.about-link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.home-link:hover,
+.about-link:hover {
+  color: #007bff;
+}
+
 /* Burger menu styles */
 .burger {
   display: none;

@@ -93,6 +93,12 @@
   transition: all 0.3s ease;
 }
 
+.timeline-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10%;
+  object-fit: cover;
+}
 .timeline-icon:hover {
   transform: scale(1.1);
   box-shadow: 0 12px 35px rgba(0, 123, 255, 0.6);
