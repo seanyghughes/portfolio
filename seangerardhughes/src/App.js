@@ -113,7 +113,7 @@ export default function App() {
         <div className="about-content">
           <div className="section-header animate-on-scroll">
             <h2 className="section-title">About Me</h2>
-            <p className="section-subtitle">Curious Passionate about data-driven decision making</p>
+            <p className="section-subtitle">Curiously Passionate about the Data-Driven World</p>
           </div>
 
           {/* Technical Skills Section */}
