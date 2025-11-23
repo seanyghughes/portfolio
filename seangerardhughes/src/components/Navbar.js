@@ -4,10 +4,11 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -17,20 +18,45 @@ function Navbar() {
     setIsOpen(false);
   };
 
+  const scrollToTop = () => {
+    closeMenu();
+    if (location.pathname === '/') {
+      // If we're on the home page, scroll to the top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      // If we're on another page, navigate to home
+      window.location.href = '/';
+    }
+  };
+
+  const scrollToAbout = () => {
+    closeMenu();
+    if (location.pathname === '/') {
+      // If we're on the home page, scroll to the about section
+      const aboutSection = document.getElementById('about');
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // If we're on another page, navigate to home and then scroll to about
+      window.location.href = '/#about';
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/" className="navbar-link" onClick={closeMenu}> <FontAwesomeIcon icon={faHouse} size='2x'/> </Link>
+        <button className="navbar-link home-link" onClick={scrollToTop}> <FontAwesomeIcon icon={faHouse} size='2x'/> </button>
         <div className={`navbar-menu ${isOpen ? 'open' : ''}`}>
           <li className="navbar-item">
-          <Link to="/" className="navbar-link" onClick={closeMenu}>
+          <button className="navbar-link home-link" onClick={scrollToTop}>
               Home
-            </Link>
+            </button>
           </li>
           <li className="navbar-item">
-          <Link to="/about" className="navbar-link" onClick={closeMenu}>
+          <button className="navbar-link about-link" onClick={scrollToAbout}>
               About
-            </Link>
+            </button>
           </li>
           <li className="navbar-item">
           <Link to="/projects" className="navbar-link" onClick={closeMenu}>
